@@ -27,7 +27,12 @@
 			backdrop-filter: blur(10px);
 		}
 
-		.flower { font-size: 3rem; }
+		.flower {
+			font-size: 3rem;
+			border: 0;
+			background: transparent;
+			cursor: pointer;
+		}
 
 		h1 {
 			margin: 0.6rem 0 1rem;
@@ -44,16 +49,57 @@
 			line-height: 1.7;
 		}
 
-		a {
-			display: inline-block;
+		#order-form {
+			display: grid;
+			gap: 0.6rem;
+			max-width: 440px;
+			margin: 0 auto 1.8rem;
+			text-align: left;
+		}
+
+		#order-form input,
+		#order-form textarea {
+			width: 100%;
+			margin-bottom: 0.6rem;
+			padding: 0.75rem 0.85rem;
+			border: 1px solid #d5a5b9;
+			border-radius: 10px;
+			font: inherit;
+		}
+
+		#order-form input:focus-visible,
+		#order-form textarea:focus-visible,
+		#order-form button:focus-visible,
+		.flower:focus-visible {
+			outline: 3px solid #52243b;
+			outline-offset: 3px;
+		}
+
+		.submit-order {
 			padding: 0.85rem 1.35rem;
 			border-radius: 999px;
 			background: #a83d70;
 			color: white;
+			border: 0;
+			font: inherit;
 			font-weight: 700;
-			text-decoration: none;
+			cursor: pointer;
 			transition: transform 160ms ease, background 160ms ease;
 		}
 
-		a:hover { background: #87305a; transform: translateY(-2px); }
-		a:focus-visible { outline: 3px solid #52243b; outline-offset: 4px; }
+		.submit-order:hover { background: #87305a; transform: translateY(-2px); }
+
+		.product-image {
+			display: block;
+			width: min(100%, 360px);
+			height: auto;
+			margin: 1.5rem auto;
+			border-radius: 12px;
+		}
+
+		.decoration {
+			display: block;
+			max-width: 100%;
+			margin: 1.5rem auto 0;
+			border-radius: 12px;
+		}
