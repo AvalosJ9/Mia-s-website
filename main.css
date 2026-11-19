@@ -103,3 +103,23 @@
 			margin: 1.5rem auto 0;
 			border-radius: 12px;
 		}
+
+		.order-summary {
+			max-width: 440px;
+			margin: 1.5rem auto;
+			padding: 1rem 1.25rem;
+			text-align: left;
+			border: 1px solid #d5a5b9;
+			border-radius: 12px;
+			background: rgb(255 255 255 / 65%);
+		}
+
+		.order-summary p {
+			margin: 0.5rem 0;
+		}
+
+		.confirmation-link {
+			display: inline-block;
+			margin-top: 0.5rem;
+			text-decoration: none;
+		}
