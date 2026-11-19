@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#f6a6c8">
 	<title>Pink Day</title>
@@ -13,27 +13,27 @@
 	<main>
 		<button class="flower" type="button" aria-label="Change flower">🌸</button>
 		<h1>Welcome!</h1>
-		<p>Order your cake pops here!</p>
+		<p>Place your order of cake pops here!</p>
 		<form id="order-form">
-			<label for="name">Name</label>
+			<label for="name">First and last Name</label>
 			<input id="name" name="name" type="text" autocomplete="name" required>
 
-			<label for="email">Email</label>
+			<label for="email">Email address</label>
 			<input id="email" name="email" type="email" autocomplete="email" required>
 
-			<label for="flavor">Flavor</label>
+			<label for="flavor">Flavor(s)</label>
 			<input id="flavor" name="flavor" type="text" required>
 
 			<label for="quantity">Quantity</label>
 			<input id="quantity" name="quantity" type="number" min="1" value="1" required>
 
-			<label for="pickupDate">Preferred pickup date</label>
+			<label for="pickupDate">Pickup date</label>
 			<input id="pickupDate" name="pickupDate" type="date">
 
-			<label for="notes">Notes (optional)</label>
+			<label for="notes">Notes for your order (This is optional)</label>
 			<textarea id="notes" name="notes" rows="3"></textarea>
 
-			<button class="submit-order" type="submit">Continue to email order</button>
+			<button class="submit-order" type="submit">Email order</button>
 		</form>
 		<img class="product-image" src="cakepops.svg" alt="Illustration of pink and chocolate cake pops">
 		<img class="decoration" src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif" alt="Pink Day GIF">
